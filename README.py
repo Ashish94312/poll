@@ -5,4 +5,4 @@ app=Flask(__name__)
 @app.route('/<name>')
 def index(name):
   return "hello {}".format(name)
-app.run()
+app.run(debug=True)
