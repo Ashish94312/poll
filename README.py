@@ -15,5 +15,6 @@ def index(name):
 #def add(num1,num2):
  # return '{} + {} = {}'.format(num1, num2, num1+num2)
 def add(num1,num2):
-  return render_template("add.html")
+  context={'num1':num1, num2:'num2'}
+  return render_template("add.html" ,**context)
 app.run(debug=True)
