@@ -1,6 +1,6 @@
 # poll
 from flask import Flask
-from fask import render_template
+from flask import render_template
 app=Flask(__name__)
 @app.route('/')
 @app.route('/<name>')
